@@ -1,0 +1,32 @@
+class Solution:
+    def sort012(self, arr, n):
+        while (1):
+            compare = 0
+            count = 0
+            i = 0
+            while (i < n-1):
+                if arr[i] > arr[i+1]:
+                    temp = arr[i]
+                    arr[i] = arr[i+1]
+                    arr[i+1] = temp
+                    count += 1
+                i += 1
+            if count == compare:
+                break
+# First attempt which sorted correctly like asked however, it was too slow so it failed me.
+
+
+class Solution:
+    def sort012(self, arr, n):
+        arr.sort()
+
+# Seccond attempt
+
+
+class Solution:
+    def binarysearch(self, arr, n, k):
+        if k in arr:
+            return arr.index(k)
+        else:
+            return -1
+# Solution to second problem
